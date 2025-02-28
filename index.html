@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ANCOP Bermuda</title>
+<title>ANCOP Bermuda</title><link rel="shortcut icon" href="images/favicon.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
@@ -15,58 +15,18 @@ body, html {
   line-height: 1.8;
 }
 
-/* Full height image header
-  .bgimg-1 {				
-  background-position: center;
-  background-size: cover;
-  background-image: url("images/slide/relief-operation-compassion-inaction.webp");
-  min-height: 100%;
-}
- */
-.w3-bar .w3-button {
-  padding: 16px;
-}
-*/
 .mySlides {display:none;}
 
-/*text block on Slide*/
-.textcontainer {
+/*text on Slide*/
+.text-slide {
   position: relative;
   font-family: Arial;
 }
 
-.text-block {
+.container-text-slide {
   position: absolute;
-  bottom: 50px;
-  right: 20px;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  opacity: 0.3;
-}
-
-/** {
-  box-sizing: border-box;
-}
-*/
-.zoom {
-  transition: transform .4s;
- }
-
-.zoom:hover {
-  -ms-transform: scale(.95); /* IE 9 */
-  -webkit-transform: scale(.95); /* Safari 3-8 */
-  transform: scale(.95); 
-}
-
-.text-slide {
-  position: absolute;
-  font-family: Arial;
-}
-
-.text-block {
-  position: absolute;
+  width: 400px;
+  height:300px;
   bottom: 50px;
   right: 300px;
   background-color: black;
@@ -75,6 +35,8 @@ body, html {
   padding-right: 20px;
   opacity: 0.5;
 }
+
+
 
 </style>
 </head>
@@ -121,24 +83,40 @@ body, html {
 </nav>
 
 <!-- Slider -->
+<header>
+<div class="w3-display-container">
+		<img src="images/slide/school-children-round.webp" class="w3-image ">
+		<div class="w3-container w3-display-left w3-padding-large"><h1 class="w3-text-green" style="font-size:3em">Empowering children</h1>
+		<h2 style="font-size:1em">Transforming their future through education.</h2>
+		<a href="pages/donate.html" class="w3-button w3-green w3-round-xxlarge" style="font-size:1em">Donate</a>
+		</div>
+ 
 
+</div>
+
+</header>
+
+
+
+
+<!--
 <header><br><br>
-  <div class="w3-padding-64;w3-container;text-slide">
+  <div class="w3-padding-64;w3-container">
   <img class="w3-image" src="images/slide/school-children.webp" alt="save-the-children">
-  <div class="text-block">
-    <h1>Save the children</h1>
-    <p>Hope is just a donation away</p>
+  <div class="w3-display-right w3-container w3-green w3-hover-gray w3-hide-small" style="bottom:10%;opacity:0.7;width:40%">
+    <h1 class="w3-text-xxlarge">Save the children</h1>
+    <h5>Hope is just a donation away</h5>
 </div>
   </div>
 </header>
-
+-->
  
 <!-- Mission -->
 <div class="w3-row w3-padding-32">
   <div class="w3-col m3 w3-white w3-center w3-padding-32"><span style="font-size:8vw;line-height:0.6em;opacity:0.2">❝</span></div>
-  <div class="w3-col m6 w3-white w3-center"><h2 class="w3-text-green">Our Mission</h2>
-  <i class="w3-serif w3-xlarge">
-    To make better quality of life of the poor families and to improve the communities where they live through a sustainable and holistic approach.</i>
+  <div class="w3-col m6 w3-center">
+  <h2 class="w3-text-green">Our Mission</h2>
+  <i>To make better quality of life of the poor families and to improve the communities where they live through a sustainable and holistic approach.</i>
   </div><br>
   <div class="w3-col m3 w3-white w3-center"><p></p></div>
 </div>
@@ -148,7 +126,7 @@ body, html {
 
 <div class="w3-row w3-light-gray w3-padding-64">
     <div class="w3-half w3-container">
-     <img src="images/officers-ancop-walk-2.webp" class="w3-round w3-image width="850" height="700"><br><br><br>
+     <img src="images/officers-ancop-walk-2.webp" class="w3-round w3-image"><br><br><br>
     </div>
 
     <div class="w3-half w3-container">
@@ -177,7 +155,7 @@ body, html {
 
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
-        <img src="images/causes/child-sponsorship-program-1.webp" alt="child-sponsorship-program" style="width:100%" class="zoom">
+        <img src="images/causes/child-sponsorship-program-1.webp" alt="child-sponsorship-program"  class="w3-hover-opacity" style="width:100%">
         <div class="w3-container">
           <h5>Child Sponsorship Program</h5>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
@@ -188,7 +166,7 @@ body, html {
 
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
-        <img src="images/causes/community-development-program-1.webp" alt="community-development-program" style="width:100%" class="zoom">
+        <img src="images/causes/community-development-program-1.webp" alt="community-development-program" class="w3-hover-opacity" style="width:100%">
         <div class="w3-container">
           <h5>Community Development Program</h5>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
@@ -199,7 +177,7 @@ body, html {
 
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
-        <img src="images/causes/humanitarian-relief-1.webp" alt="humanitarian-relief" style="width:100%" class="zoom">
+        <img src="images/causes/humanitarian-relief-1.webp" alt="humanitarian-relief" class="w3-hover-opacity" style="width:100%">
         <div class="w3-container">
           <h5>Humanitarian Relief</h5>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
@@ -224,6 +202,34 @@ body, html {
 <!-- Modal for full size images on click-->
 
 <!-- Contact Section -->
+
+<div class="w3-row w3-padding-64">
+    <div class="w3-half w3-container">
+     <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    </div>
+
+    <div class="w3-half w3-container">
+      <h2 class="w3-center w3-text-green">Send us a message</h2>
+       <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-green" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    </div>
+ </div>
+
+
+
+
+
 <div class="w3-container" style="padding:128px 16px" id="contact">
   <h2 class="w3-center w3-text-green">CONTACT</h2>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
@@ -243,8 +249,6 @@ body, html {
         </button>
       </p>
     </form>
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
   </div>
 </div>
 
@@ -253,13 +257,9 @@ body, html {
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>ANCOP Bermuda @2025</p>
 </footer>
  
 <script>
@@ -289,24 +289,20 @@ function w3_close() {
 }
 
 //Slide
-var slideIndex = 1;
-showDivs(slideIndex);
+var myIndex = 0;
+carousel();
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
+function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
 }
-
 </script>
 
 
