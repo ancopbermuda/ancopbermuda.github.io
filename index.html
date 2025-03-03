@@ -8,6 +8,15 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+body { 
+	width: 100%; 
+	max-width: 1200px; /* or whatever width you want */ 
+	margin-right: auto; 
+	margin-left: auto; 
+} 
+
+}
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
@@ -16,26 +25,6 @@ body, html {
 }
 
 .mySlides {display:none;}
-
-/*text on Slide*/
-.text-slide {
-  position: relative;
-  font-family: Arial;
-}
-
-.container-text-slide {
-  position: absolute;
-  width: 400px;
-  height:300px;
-  bottom: 50px;
-  right: 300px;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  opacity: 0.5;
-}
-
 
 
 </style>
@@ -66,8 +55,6 @@ body, html {
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
-
-
   </div>
 </div>
 
@@ -83,18 +70,43 @@ body, html {
 </nav>
 
 <!-- Slider -->
-<header>
+
+
+<div class="w3-row">
+<div class="w3-container w3-display-left" style="padding-left: 300px;">
+  <div class="w3-padding-large">
+	<h1 class="w3-text-green w3-xxxlarge">Save the Children</h1>
+	<p>Transforming their future through education.</p>
+	<a href="pages/donate.html" class="w3-button w3-green w3-round-xxlarge" style="font-size:1em">Donate</a>
+
+  </div>
+</div>
+<div class="w3-container w3-center">
+<img src="images/slide/school-children-4.webp" width="800px" height="800px "class="w3-image w3-circle w3-right">
+</div>
+</div>
+
+
+
+
+<!--
 <div class="w3-display-container">
 		<img src="images/slide/school-children-round.webp" class="w3-image ">
 		<div class="w3-container w3-display-left w3-padding-large"><h1 class="w3-text-green" style="font-size:3em">Empowering children</h1>
-		<h2 style="font-size:1em">Transforming their future through education.</h2>
+		<h1 style="font-size:1em">Transforming their future through education.</h1>
 		<a href="pages/donate.html" class="w3-button w3-green w3-round-xxlarge" style="font-size:1em">Donate</a>
 		</div>
- 
+ </div>
+-->
 
+
+
+<!--
+<div class="w3-content roundimg">
+	<img src="images/slide/school-children.webp" class="roundimg w3-right" width="700px" height="700px">
 </div>
+-->
 
-</header>
 
 
 
@@ -108,7 +120,7 @@ body, html {
     <h5>Hope is just a donation away</h5>
 </div>
   </div>
-</header>
+
 -->
  
 <!-- Mission -->
@@ -124,9 +136,9 @@ body, html {
 
 <!-- Who We Are" -->
 
-<div class="w3-row w3-light-gray w3-padding-64">
+<div class="w3-row w3-padding-64">
     <div class="w3-half w3-container">
-     <img src="images/officers-ancop-walk-2.webp" class="w3-round w3-image"><br><br><br>
+     <img src="images/officers-ancop-walk-2.webp" class="w3-round w3-image">
     </div>
 
     <div class="w3-half w3-container">
@@ -139,7 +151,7 @@ body, html {
 
 <!-- ANCOP Walk -->
 
-<div class="w3-container w3-green w3-padding-64">
+<div class="w3-container w3-text-green w3-padding-64">
   <div class="w3-row-padding">
   <center><h1> This section is for ancop Walk</h1></center>
 </div>
@@ -147,7 +159,8 @@ body, html {
 
 <!-- What We Do Section -->
 
-<div class="w3-row-padding" id="whatwedo">
+<div class="w3-row-padding" id="whatwedo" style="max-width: 1024px;margin-right: auto; 
+	margin-left: auto;">
     <div class="w3-center w3-padding-32">
 	 <h2 class="w3-text-green w3-center">What We Do</h2>
 	  <p class="w3-center w3-large">Empowering Communities, Changing Tomorrow</p>
@@ -191,7 +204,7 @@ body, html {
 
 
 <!-- Blog Section -->
-<div class="w3-container w3-green w3-light-grey w3-padding-64">
+<div class="w3-container w3-text-green w3-padding-64">
   <div class="w3-row-padding">
   <center><h1> This section is for the blog section</h1></center>
 </div>
@@ -229,7 +242,7 @@ body, html {
 
 
 
-
+<!--
 <div class="w3-container" style="padding:128px 16px" id="contact">
   <h2 class="w3-center w3-text-green">CONTACT</h2>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
@@ -251,15 +264,18 @@ body, html {
     </form>
   </div>
 </div>
+-->
 
 <!-- Footer -->
-<footer class="w3-center w3-light-gray w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+<hr>
+<footer class="w3-row">
+    <div class="w3-section w3-right-align">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up"></i>To the top</a><br>
+	<p class="w3-left-align">ANCOP Bermuda @2025</p>
+	<i class="fa fa-facebook-official w3-hover-opacity" w3-align-right></i>
 
   </div>
-  <p>ANCOP Bermuda @2025</p>
+  
 </footer>
  
 <script>
@@ -304,7 +320,6 @@ function carousel() {
   setTimeout(carousel, 9000);    
 }
 </script>
-
 
 
 </body>
