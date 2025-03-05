@@ -52,8 +52,8 @@ https://templatemo.com/tm-581-kind-heart-charity
   --primary-color:                green;
   --secondary-color:              green;
   --section-bg-color:             #f8f9fa;
-  --site-footer-bg-color:         #44525d;
-  --custom-btn-bg-color:          #597081;
+  --site-footer-bg-color:         #1b1c25;
+  --custom-btn-bg-color:          #1f4068;
   --custom-btn-bg-hover-color:    green;
   --dark-color:                   #000000;
   --p-color:                      #717275;
@@ -530,7 +530,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background: var(--primary-color);
+  background: var(--green);
   padding-top: 15px;
   padding-bottom: 10px;
 }
@@ -679,8 +679,8 @@ strong {
 .about-image {
   border-radius: var(--border-radius-medium);
   display: block;
-  width: 350px;
-  height: 400px;
+  width: 400px;
+  height: 350px;
   object-fit: cover;
 }
 
