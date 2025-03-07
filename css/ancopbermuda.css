@@ -377,7 +377,7 @@ strong {
 }
 
 .logo {
-  width: 80px;
+  width: 110px;
   height: auto;
 }
 
@@ -679,8 +679,8 @@ strong {
 .about-image {
   border-radius: var(--border-radius-medium);
   display: block;
-  width: 400px;
-  height: 350px;
+  width: 350px;
+  height: 400px;
   object-fit: cover;
 }
 
